@@ -1,0 +1,77 @@
+32e71ead7f29e632162a4b8b9df3c637
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _propTypes = _interopRequireDefault(require("prop-types"));var _jsxFileName = "/Users/caiomoura/workspace/wecast/podcastmrg/src/components/small/TitleAndSubtitle.js";var
+
+TitleAndSubtitle = function (_React$Component) {(0, _inherits2.default)(TitleAndSubtitle, _React$Component);function TitleAndSubtitle() {(0, _classCallCheck2.default)(this, TitleAndSubtitle);return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(TitleAndSubtitle).apply(this, arguments));}(0, _createClass2.default)(TitleAndSubtitle, [{ key: "render", value: function render()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {var _this$props =
+
+
+
+
+
+
+
+      this.props,title = _this$props.title,subtitle = _this$props.subtitle,size = _this$props.size,numberOfLinesTitle = _this$props.numberOfLinesTitle,numberOfLinesSubtitle = _this$props.numberOfLinesSubtitle,styleProps = _this$props.styleProps;
+
+      return (
+        _react.default.createElement(_reactNative.View, { style: styleProps, __source: { fileName: _jsxFileName, lineNumber: 35 } },
+        _react.default.createElement(_reactNative.Text, {
+          numberOfLines: numberOfLinesTitle,
+          ellipsizeMode: "tail",
+          style: styles[size], __source: { fileName: _jsxFileName, lineNumber: 36 } },
+
+        title),
+
+        _react.default.createElement(_reactNative.Text, {
+          numberOfLines: numberOfLinesSubtitle,
+          ellipsizeMode: "tail",
+          style: styles.subtitle,
+          note: true, __source: { fileName: _jsxFileName, lineNumber: 43 } },
+
+        subtitle)));
+
+
+
+    } }]);return TitleAndSubtitle;}(_react.default.Component);TitleAndSubtitle.defaultProps = { title: '', subtitle: '', size: 'small', styleProps: { alignItems: "center", marginTop: 4 * 3 }, numberOfLinesTitle: 2, numberOfLinesSubtitle: 1 };TitleAndSubtitle.propTypes = { title: _propTypes.default.string.isRequired, subtitle: _propTypes.default.string.isRequired, size: _propTypes.default.oneOf(['large', 'medium', 'small']), numberOfLinesTitle: _propTypes.default.number, numberOfLinesSubtitle: _propTypes.default.number, styleProps: _propTypes.default.object };
+
+
+var styles = _reactNative.StyleSheet.create({
+  small: {},
+
+
+
+  medium: {},
+
+
+
+  large: {
+    fontSize: 32,
+    fontWeight: "200" },
+
+  subtitle: {
+    fontSize: 12,
+    paddingTop: 4,
+    color: '#e3e3e3' } });var _default =
+
+
+
+TitleAndSubtitle;exports.default = _default;

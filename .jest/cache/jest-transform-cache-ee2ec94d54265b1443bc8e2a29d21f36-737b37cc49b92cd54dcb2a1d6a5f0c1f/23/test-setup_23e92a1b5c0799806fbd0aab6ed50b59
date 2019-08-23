@@ -1,0 +1,41 @@
+3b4295c1a88cc2356f13f4514d89dcc1
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));require("react-native");
+var _enzyme = _interopRequireDefault(require("enzyme"));
+var _enzymeAdapterReact = _interopRequireDefault(require("enzyme-adapter-react-16"));
+require("jest-enzyme");
+
+
+
+var jsdom = new (require('jsdom').JSDOM)('<!doctype html><html><body></body></html>');var
+window = jsdom.window;
+
+function copyProps(src, target) {
+  Object.defineProperties(target, (0, _objectSpread2.default)({},
+  Object.getOwnPropertyDescriptors(src),
+  Object.getOwnPropertyDescriptors(target)));
+
+}
+
+global.window = window;
+global.document = window.document;
+global.navigator = {
+  userAgent: 'node.js' };
+
+copyProps(window, global);
+
+
+
+
+
+
+_enzyme.default.configure({ adapter: new _enzymeAdapterReact.default() });
+
+
+var originalConsoleError = console.error;
+console.error = function (message) {
+  if (message.startsWith('Warning:')) {
+    return;
+  }
+
+  originalConsoleError(message);
+};

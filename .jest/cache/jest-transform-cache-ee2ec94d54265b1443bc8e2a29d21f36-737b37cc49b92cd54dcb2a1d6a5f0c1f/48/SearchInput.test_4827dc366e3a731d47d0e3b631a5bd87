@@ -1,0 +1,19 @@
+cc76fb529cc095555ee4f8c1575f27db
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var _react = _interopRequireDefault(require("react"));
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+var _SearchInput = _interopRequireDefault(require("../SearchInput"));
+var _enzyme = require("enzyme");
+var _reduxMockProvider = _interopRequireWildcard(require("redux-mock-provider"));var _jsxFileName = "/Users/caiomoura/workspace/wecast/podcastmrg/src/components/small/__tests__/SearchInput.test.js";
+
+var store = (0, _reduxMockProvider.getMockStore)({
+  key: 'textTheHot',
+  state: '' });
+
+
+describe('<Header /> component', function () {
+  var component = (0, _enzyme.mount)(
+  _react.default.createElement(_reduxMockProvider.default, { store: store, __source: { fileName: _jsxFileName, lineNumber: 14 } },
+  _react.default.createElement(_SearchInput.default, { __source: { fileName: _jsxFileName, lineNumber: 15 } })));
+
+
+});

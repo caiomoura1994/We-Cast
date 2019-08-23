@@ -1,0 +1,9 @@
+d800dbfbefad676351386387078f095f
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.searchTheHot = exports.registerNavigation = void 0;var registerNavigation = function registerNavigation(navigation) {return {
+    type: 'REGISTER_NAVIGATION',
+    navigation: navigation };};exports.registerNavigation = registerNavigation;
+
+
+var searchTheHot = function searchTheHot(textTheHot) {return {
+    type: 'SEARCH_THE_HOT',
+    textTheHot: textTheHot };};exports.searchTheHot = searchTheHot;

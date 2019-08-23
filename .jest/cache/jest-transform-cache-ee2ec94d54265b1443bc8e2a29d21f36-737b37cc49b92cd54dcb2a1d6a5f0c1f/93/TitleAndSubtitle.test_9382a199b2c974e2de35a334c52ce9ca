@@ -1,0 +1,16 @@
+45353811094d21959fa59748a21fe8f2
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _react = _interopRequireDefault(require("react"));
+var _TitleAndSubtitle = _interopRequireDefault(require("../TitleAndSubtitle"));
+
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));var _jsxFileName = "/Users/caiomoura/workspace/wecast/podcastmrg/src/components/small/__tests__/TitleAndSubtitle.test.js";
+
+test('renders correctly', function () {
+  var tree = _reactTestRenderer.default.create(
+  _react.default.createElement(_TitleAndSubtitle.default, {
+    title: 'music.title',
+    subtitle: 'subtitle',
+    size: "small", __source: { fileName: _jsxFileName, lineNumber: 8 } })).
+
+  toJSON();
+  expect(tree).toMatchSnapshot();
+});
